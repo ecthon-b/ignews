@@ -11,7 +11,7 @@ export function SubscribButton({ priceId }: SubscribeButtonProps) {
     const [session] = useSession();
 
     async function handleSubscribe() {
-        if(!session) {
+        if (!session) {
             signIn('github')
             return;
         }
@@ -23,15 +23,15 @@ export function SubscribButton({ priceId }: SubscribeButtonProps) {
 
             await stripe.redirectToCheckout({ sessionId })
         } catch (err) {
-            alert(err.message);            
+            alert(err.message);
         }
 
     }
     return (
         <button
             type="button"
-            className={ styles.subscribButton }
-            onClick={ handleSubscribe }
+            className={styles.subscribButton}
+            onClick={handleSubscribe}
         >
             Subscribe now
         </button>
