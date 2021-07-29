@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./public/ignews.png" alt-="Banner Ignews"/>
+<img src="./public/ignews.PNG" alt-="Banner Ignews"/>
 </div>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
